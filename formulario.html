@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cadastro de venda</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+    <body>
+       <div class="cabeçalho">
+           <h1 id="titulo">Cadastro de Venda</h1>
+           <h3 id="subtitulo">Complete seu cadastro</h3>
+           <br>
+       </div>
+       <form class="form">
+            <fieldset class="grupo">
+                <div>
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email"required> 
+                </div>  
+            </fieldset>
+           
+              
+            <div class="marca">
+                <label><strong>Qual marca de carro você quer comprar :</strong></label>
+                <br>
+                <label>volkswagen</label>
+                <label>
+                    <input type="radio" name="marca" value="volkswagen" checked>
+                </label>
+                
+                <label>
+                    <label>Audi</label>
+                    <input type="radio" name="marca" value="Audi">
+                </label>
+                
+                <label>
+                    <label>Chevrolet</label>
+                    <input type="radio" name="marca" value="Chevrolet">
+                </label>
+                <label>
+                    <label>Toyota</label>
+                    <input type="radio" name="marca" value="toyota">
+                </label>
+                
+                <label>
+                    <label>Volvo</label>
+                    <input type="radio" name="marca" value="Volvo">
+                </label>
+
+            </div> 
+            <fieldset class="grupo">
+                <div>
+                    <label><strong>Qual o tipo de combustível?</strong></label>
+                    <select id="combustivel">
+                        <option selected disobled value=""></option>
+                        <option>Gasolina</option>
+                        <option>Etanol</option>
+                        <option>Diesel</option>
+                        <option>Biodiesel</option>
+                        <option>GNV</option>
+                        <option>Eletricidade</option>
+                        <label>Qual câmbio?</label>
+                    </select>
+                        
+                </div> 
+            </fieldset> 
+            <br>
+            
+            <fieldset class="grupo">
+                <div>
+                    <label><strong>Qual câmbio?</strong></label>
+                    <select id="mecanica">
+                        <option selected disobled value=""></option>
+                        <option>Manual</option>
+                        <option>Automatico</option>
+                    </select>    
+                </div> 
+            </fieldset> 
+            <br>
+            
+            <fieldset class="grupo">
+                <div>
+                    <label><strong>Nome do carro</strong></label><br>
+                    <input type="text" name="nome" id="nome">
+                </div>   
+                
+                
+                <div class="campo">
+                    <label><strong>Conte um pouco do que você gostaria em seu carro .</strong></label><br>
+                    <textarea row="6" style="width: 26em" id="experiencia" nome="experiencia"></textarea>
+                </div>  
+            </fieldset> 
+            <br>
+              
+           
+            
+            
+            <button class="botao" type="submit">Concluido</button> 
+        </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
